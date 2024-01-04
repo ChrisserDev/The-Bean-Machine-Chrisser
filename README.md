@@ -1,4 +1,4 @@
-#The-Bean-Machine
+#The-Bean-Machine https://beanmachineshop.netlify.app/
 
 (Please note that this is a static one page website and no dynamic concepts have been implemented for the scope of this projet).
 
