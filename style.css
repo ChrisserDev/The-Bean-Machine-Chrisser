@@ -1,0 +1,388 @@
+/* DEFAULT STYLING */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROOT COLOR STYLING */
+
+:root {
+  --magenta: #FF5678;
+  --white: #ffffff;
+  --green: #149770;
+  --gray: #F6F2EF;
+  --black: #1F2B38;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+  background-color: var(--black);
+}
+
+.navbar h1{
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: .2em;
+}
+
+.nav-btns button{
+  border: none;
+  background: transparent;
+  color: var(--white);
+  font-size: .5rem;
+  display: none;
+}
+
+.nav-btns button:hover{
+  border-bottom: 2px solid var(--magenta);
+  cursor: pointer;
+}
+
+main{
+  margin: 0 2em;
+}
+
+/* LOGO AND IMAGE */
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.content .left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.left h3 {
+  padding: 1em 0;
+}
+
+.search-image{
+  margin-top: .3em;
+}
+
+.search-image img{
+  background-color: var(--magenta);
+  border-radius: .5em;
+  margin-left: .3em;
+}
+
+.front-page-img img{
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-container input {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--gray);
+  padding-left: .8em;
+  font-size: .7rem;
+}
+
+/* ABOUT US SECTION */
+
+.about-section {
+  border-top: 1px solid black;
+  padding: 1.5em 0;
+}
+
+.about-section p {
+  font-size: .9rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.about-section img{
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px -1px rgba(0,0,0,0.75);
+}
+
+.about-section-description h2{
+  margin-bottom: .5em;
+}
+
+.rambla {
+  color: var(--magenta);
+}
+
+/* SPECIAL OFFERS & SELECTION SECTIONS */
+
+.special-offers-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  border-top: 1px solid black;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.bean-selection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+.bean-selection-card img {
+  border-radius: 6px;
+  padding: 1em .1em;
+  height: 200px;
+}
+
+.bean-selection-card button {
+  border-radius: 24px;
+  border: none;
+  text-align: center;
+  background-color: var(--magenta);
+  color: var(--white);
+  padding: .5em 3em;
+  margin: 1em 0;
+}
+
+
+/* TAGS */
+
+.offer-price{
+  position: absolute;
+  top: 16px;
+  left: 186px;
+  padding: .1em;
+  background-color: var(--magenta);
+  color: var(--white);
+  max-width: 125px;
+}
+
+.in-stock-label, .out-of-stock-label{
+  position: absolute;
+  background-color: var(--magenta);
+  color: var(--white);
+  padding: .2em;
+}
+
+.out-of-stock-label{
+  top: 16px;
+  left: 206px;
+}
+
+.in-stock-label{
+  top: 16px;
+  left: 232px;
+}
+
+/* SELECTION CONTAINER */
+
+.selection-container{
+  padding: 1.5em 0;
+}
+
+.our-selection-title{
+  border-top: 1px solid var(--black);
+  padding-top: 1em;
+}
+
+.price{
+  text-align: center;
+  font-weight: bold;
+  margin-top: .5em;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 1em .8em;
+}
+
+.socials footer p {
+  padding: 10px 10px;
+
+}
+
+.logos img {
+  margin: 1em;
+  width: 3%;
+}
+
+/* MEDIA QUERIES PHONE */
+
+@media (min-width: 426px) {
+
+  .front-page-img{
+    max-width: 250px;
+  }
+
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media (min-width: 768px) {
+  .front-page-img{
+    max-width: 350px;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .left h3{
+    padding: .4em 0 1.5em 0;
+  }
+
+  .cards-container{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .offer-price{
+    top: 16px;
+    left: 133px;
+  }
+
+  .in-stock-label{
+    left: 222px;
+  }
+
+  .out-of-stock-label{
+    left: 196px;
+  }
+
+  .selection-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .search-container input{
+    font-size: 1rem;
+  }
+
+  .navbar{
+    justify-content: space-between;
+  }
+  
+  .nav-btns button{
+    display: inline-block;
+    padding-top: .8em;
+    font-size: 0.8rem;
+  }
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media (min-width: 1024px) {
+  .front-page-img{
+    max-width: 550px;
+  }
+
+  h1{
+    font-size: 4.5rem;
+  }
+
+  h2, .left h3{
+    font-size: 2rem;
+  }
+
+  .navbar h1{
+    font-size: 2rem;
+  }
+
+  .nav-btns button{
+    font-size: 1rem;
+    padding-top: .5em;
+    margin-right: 0.4em;
+  }
+
+  .search-container input{
+    font-size: 1.2rem;
+    padding: .1em .5em;
+  }
+
+  .search-image img{
+    width: 100%;
+    margin-top: .2em;
+    padding: .5em .1em;
+  }
+
+  .about-section p{
+    font-size: 1.2rem;
+    line-height: 1.2em;
+  }
+
+  .bean-selection-card p{
+    font-size: 1.1rem;
+  }
+
+  .bean-selection-card button{
+    font-size: .8rem;
+  }
+
+  .special-offers-section .bean-selection-card{
+    padding: 2em;
+  }
+
+  .selection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .offer-price{
+    top: 48px;
+    left: 153px;
+    max-width: 210px;
+  }
+
+  .in-stock-label{
+    left: 276px;
+    top: 16px;
+  }
+
+  .out-of-stock-label{
+    left: 248px;
+  }
+
+  .logos img{
+    width: 1.5%;
+  }
+
+}
