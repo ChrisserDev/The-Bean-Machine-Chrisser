@@ -6,11 +6,13 @@ https://beanmachineshop.netlify.app/
 
 ## Here's an overview of the project structure:
 
-  Header and Navigation: The header includes a navigation bar with the shop's name, "The Bean Machine," and navigation buttons for key sections like "About Us," "Special Offers," and "Our Selection."
+### Header and Navigation: 
+  
+  The header includes a navigation bar with the shop's name, "The Bean Machine," and navigation buttons for key sections like "About Us," "Special Offers," and "Our Selection."
 
 ### Main Content:
 
-  Front Page Section: 
+  ### Front Page Section: 
   
   Features a logo, shop name, and a search bar for finding specific coffee beans. A visually appealing illustration showcases the essence of the coffee bean shop.
 
